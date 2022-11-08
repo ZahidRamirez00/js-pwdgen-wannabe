@@ -12,37 +12,37 @@
 
   <body>
     <main>
-      <!-- inizio section offer-->
+      <!-- inizio section-->
       <section id="offer" class="bg-info">
-        <div class="container p-4 row">
+        <div class="col-8 p-4 row">
           
-          <h2 class="text-center text-uppercase">Want an offer?</h2>
+          <h2 class="text-center text-uppercase">Password Generator</h2>
           <div class="col-md-6">
-            <img src="..." class="rounded float-start" alt="...">
+            <img src="./img/undraw_profile_pic_ic5t.svg" class="rounded float-start" alt="...">
           </div>
           <div class="col-md-6">
             <!-- First name input-->
             <div class="col-12">
-              <label class="form-label" for="first-name">First name</label>
-              <input class="form-control" id="first-name" type="text" placeholder="Enter your first name..." required readonly/>
+              <label class="form-label" for="first-name">Nome</label>
+              <input class="form-control" id="first-name" type="text" placeholder="Enter your first name..." required />
             </div>
             <!-- Last name input -->
             <div class="col-12">
-              <label class="form-label" for="name">Last name</label>
-              <input class="form-control" id="name" type="text" placeholder="Enter your last name..." required readonly/>
+              <label class="form-label" for="name">Cognome</label>
+              <input class="form-control" id="name" type="text" placeholder="Enter your last name..." required />
             </div>
-            <!-- Email address input-->
+            <!-- Favourite  input-->
             <div class="col-12">
-              <label class="form-label" for="email">Email address</label>
-              <input class="form-control" id="email" type="email" placeholder="name@example.com" required readonly/>
+              <label class="form-label" for="email">Colore preferito</label>
+              <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+            </div>
+            <div class="col-12 text-center mt-4">
+              <button class="btn btn-warning btn-lg" id="submitButton" type="submit">Send</button>
             </div>
             <!-- Discount Code-->
             <div class="col-12">
               <label class="form-label" for="phone">Discount Code</label>
               <input class="form-control" id="discount-code" type="text" readonly/>
-            </div>
-            <div class="col-12 text-center mt-4">
-              <button class="btn btn-warning btn-lg" id="submitButton" type="submit">Send</button>
             </div>
           </div>
         </div>

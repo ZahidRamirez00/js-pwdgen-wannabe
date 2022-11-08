@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Password Generator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -14,55 +14,37 @@
     <main>
       <!-- inizio section offer-->
       <section id="offer" class="bg-info">
-        <div class="container p-4">
+        <div class="container p-4 row">
+          
           <h2 class="text-center text-uppercase">Want an offer?</h2>
-          <form id="offerForm" class="row gy-2 my-3">
+          <div class="col-md-6">
+            <img src="..." class="rounded float-start" alt="...">
+          </div>
+          <div class="col-md-6">
             <!-- First name input-->
-            <div class="col-sm-6 col-12">
+            <div class="col-12">
               <label class="form-label" for="first-name">First name</label>
-              <input class="form-control" id="first-name" type="text" placeholder="Enter your first name..." required />
+              <input class="form-control" id="first-name" type="text" placeholder="Enter your first name..." required readonly/>
             </div>
             <!-- Last name input -->
-            <div class="col-sm-6 col-12">
+            <div class="col-12">
               <label class="form-label" for="name">Last name</label>
-              <input class="form-control" id="name" type="text" placeholder="Enter your last name..." required />
+              <input class="form-control" id="name" type="text" placeholder="Enter your last name..." required readonly/>
             </div>
             <!-- Email address input-->
-            <div class="col-sm-6 col-12">
+            <div class="col-12">
               <label class="form-label" for="email">Email address</label>
-              <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
-            </div>
-            <!-- Phone number input-->
-            <div class="col-sm-6 col-12">
-              <label class="form-label" for="hours">Hours requested</label>
-              <input class="form-control" id="hours" type="text" placeholder="Hours requested..." />
-            </div>
-            <!-- Type of offer-->
-            <div class="col-sm-6 col-12">
-              <label class="form-label" for="type-of-work">Type of work</label>
-              <select class="form-select" id="type-of-work">
-                <option selected>Select the type of work</option>
-                <option value="1">Backend Development</option>
-                <option value="2">Frontend Development</option>
-                <option value="3">Project Analysis</option>
-              </select>
+              <input class="form-control" id="email" type="email" placeholder="name@example.com" required readonly/>
             </div>
             <!-- Discount Code-->
-            <div class="col-sm-6 col-12">
-              <label class="form-label" for="phone">Discount Code</label>
-              <input class="form-control" id="discount-code" type="text" />
-            </div>
-            <!-- Message input-->
             <div class="col-12">
-              <label class="form-label" for="message">Message</label>
-              <textarea rows="5" class="form-control" id="message" placeholder="Specify your work commission..."
-                required></textarea>
+              <label class="form-label" for="phone">Discount Code</label>
+              <input class="form-control" id="discount-code" type="text" readonly/>
             </div>
             <div class="col-12 text-center mt-4">
               <button class="btn btn-warning btn-lg" id="submitButton" type="submit">Send</button>
             </div>
-
-          </form>
+          </div>
         </div>
       </section>
       <!-- fine section offer-->
